@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple insurance submission</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../static/css/style.css"/>
+</head>
+<body>
+    <!-- Form fields for Simple Open Auction -->
+    <div id="create" class="tabcontent">
+        <form method="POST" action="/create">
+        <h2>Simple Open Auction</h2>
+        <div class="input-group">
+            <h3>insurer value</h3>
+            <input type="text" name="insurerValue" required placeholder="Enter insurer's address..."/>
+        </div>
+        <div class="input-group">
+            <h3>insured value</h3>
+            <input type="text" name="insuredValue" required placeholder="Enter insured amount..."/>
+        </div><br>
+        <div class="input-group">
+            <h3>insurername</h3>
+            <input type="text" name="insurername" required placeholder="Enter insurer's name..."/>
+        </div><br>
+        <div class="input-group">
+            <h3>insuredname</h3>
+            <input type="text" name="insuredname" required placeholder="Enter insured's name..."/>
+        </div><br>
+        <div class="input-group">
+            <input type="submit" value="submit claim"/>
+        </div>
+        </form>
+    </div>
