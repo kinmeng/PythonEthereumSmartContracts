@@ -11,7 +11,8 @@ contract InsuranceContract {
         address insurerValue,
         address insuredValue,
         string memory insurername,
-        string memory insuredname
+        string memory insuredname,
+        uint value
         
     ) public {
         
@@ -19,6 +20,7 @@ contract InsuranceContract {
         insured= insuredValue;
         insurerName = insurername;
         insuredName = insuredname;
+        value = value;
         
     }
 
@@ -27,9 +29,10 @@ function getInfo() public view returns(
         address insurerValue,
         address insuredValue,
         string memory insurername,
-        string memory insuredname)
+        string memory insuredname,
+        uint value)
           {
-        return (insurer,insured,insurerName,insuredName);
+        return (insurer,insured,insurerName,insuredName,value);
     }
 
 
